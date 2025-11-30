@@ -61,7 +61,7 @@ AccuKnox-user-management-tests/
 ```
 
 ## 🪲 Notes / Known Issues
-- Employee name auto-suggest may load slowly — tests include waits to handle suggestion population.
+- The Employee Name field is read-only after user creation. Automated tests cannot edit this field; scripts should only verify its value.
 - The public OrangeHRM demo site occasionally displays SSL certificate warnings (ERR_CERT_COMMON_NAME_INVALID).  
 Due to this, authentication and navigation may not work reliably in automation.
 
