@@ -51,4 +51,4 @@ def test_non_admin_cannot_access_admin(page):
     admin.open_admin()
 
     # Admin page should not load
-    expect(page.get_by_text("Invalid Credentials")).to_be_visible()
+    expect(page.get_by_text("Unauthorized")).to_be_visible()
